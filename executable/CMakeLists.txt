@@ -33,3 +33,6 @@ target_link_libraries(zorder pargeoLib)
 
 add_executable(uniformData uniformData.cpp)
 target_link_libraries(uniformData pargeoLib)
+
+add_executable(dataGenerator dataGenerator.cpp)
+target_link_libraries(dataGenerator pargeoLib)

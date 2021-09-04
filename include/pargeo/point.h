@@ -27,6 +27,8 @@ namespace pargeo {
 
     _point() { for (int i=0; i<_dim; ++i) x[i]=empty; }
 
+    _point(_tFloat f) { for (int i = 0; i < _dim; ++i) x[i] = f; }
+
     _point(_tData* p) { for (int i=0; i<_dim; ++i) x[i]=p[i]; }
 
     _point(_point* p): attribute(p->attribute) { for (int i=0; i<_dim; ++i) x[i]=p->x[i]; }
